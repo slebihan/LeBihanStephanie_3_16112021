@@ -1,0 +1,63 @@
+@media screen and (min-width: 992px) {
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  header .logo img {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header .logo {
+    width: 100%;
+  }
+  header .logo img {
+    width: 20%;
+  }
+  .menu-restau-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spinner {
+    display: none;
+  }
+  header .logo {
+    width: 100%;
+  }
+  header .logo .img {
+    width: 50%;
+  }
+  .menu-restau-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-restau-1 .menu {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=mediaqueries.page-restau-indiv.css.map */

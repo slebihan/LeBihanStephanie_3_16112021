@@ -1,0 +1,47 @@
+    
+    $color-primary:#9356dc;
+
+
+
+    $color-secondary: #FF79DA;
+
+
+    $color-tertiary:#99E2D0;
+
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url(./utils/Shrikhand/Shrikhand-Regular.ttf);
+}
+$font-1:"Shrikhand";
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(./utils/Roboto/Roboto-Regular.ttf);
+}
+$font-2:"Roboto Regular";
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url(./utils/Roboto/Roboto-Thin.ttf);
+}
+$font-3:"Roboto Thin";
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(./utils/Roboto/Roboto-Bold.ttf);
+}
+$font-4:"Roboto Bold";
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(./utils/Roboto/Roboto-Light.ttf);
+}
+$font-5:"Roboto Light";
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url(./utils/Roboto/Roboto-Medium.ttf);
+}
+$font-6:"Roboto Medium";
+

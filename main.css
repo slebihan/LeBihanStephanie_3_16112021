@@ -1,0 +1,836 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url(./utils/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(./utils/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Thin";
+  src: url(./utils/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(./utils/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url(./utils/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(./utils/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url(./utils/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(./utils/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Thin";
+  src: url(./utils/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(./utils/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url(./utils/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(./utils/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url(./utils/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(./utils/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Thin";
+  src: url(./utils/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(./utils/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url(./utils/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url(./utils/Roboto/Roboto-Medium.ttf);
+}
+
+.menu:nth-child(1) .card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  opacity: 0;
+}
+
+.menu:nth-child(1) .card-menu:nth-child(3) {
+  -webkit-animation-delay: 3100ms;
+          animation-delay: 3100ms;
+}
+
+.menu:nth-child(1) .card-menu:nth-child(4) {
+  -webkit-animation-delay: 3300ms;
+          animation-delay: 3300ms;
+}
+
+.menu:nth-child(1) .card-menu:nth-child(5) {
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
+}
+
+.menu:nth-child(2) .card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+  opacity: 0;
+}
+
+.menu:nth-child(2) .card-menu:nth-child(3) {
+  -webkit-animation-delay: 3700ms;
+          animation-delay: 3700ms;
+}
+
+.menu:nth-child(2) .card-menu:nth-child(4) {
+  -webkit-animation-delay: 3900ms;
+          animation-delay: 3900ms;
+}
+
+.menu:nth-child(2) .card-menu:nth-child(5) {
+  -webkit-animation-delay: 4100ms;
+          animation-delay: 4100ms;
+}
+
+.menu:nth-child(3) .card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+  opacity: 0;
+}
+
+.menu:nth-child(3) .card-menu:nth-child(3) {
+  -webkit-animation-delay: 4300ms;
+          animation-delay: 4300ms;
+}
+
+.menu:nth-child(3) .card-menu:nth-child(4) {
+  -webkit-animation-delay: 4500ms;
+          animation-delay: 4500ms;
+}
+
+.menu:nth-child(3) .card-menu:nth-child(5) {
+  -webkit-animation-delay: 4600ms;
+          animation-delay: 4600ms;
+}
+
+.spinner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 10;
+  background: white;
+  -webkit-animation: spinnerOne 3s ease-in-out;
+          animation: spinnerOne 3s ease-in-out;
+  visibility: hidden;
+}
+
+.spinner h4 {
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto 0;
+  font-family: "Shrikhand";
+}
+
+.spinner .spinner-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border-top: 5px solid #9356dc;
+  border-bottom: 5px solid #FF79DA;
+  border-left: 5px solid transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-one 1s ease-in;
+          animation: spinner-one 1s ease-in;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  z-index: 20;
+  visibility: hidden;
+  font-size: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .loader {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    z-index: 500;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: white;
+    -webkit-animation: spinnerOne 3s ease-in-out;
+            animation: spinnerOne 3s ease-in-out;
+    visibility: hidden;
+  }
+  .bouncer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100px;
+    height: 100px;
+    z-index: 500;
+    margin: 0 auto;
+  }
+  .bouncer div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-animation: bounce 0.5s ease infinite alternate,opacity 3s ease forwards;
+            animation: bounce 0.5s ease infinite alternate,opacity 3s ease forwards;
+  }
+  .bouncer div:nth-child(1) {
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+    background-color: #9356dc;
+  }
+  .bouncer div:nth-child(2) {
+    -webkit-animation-delay: 0.60s;
+            animation-delay: 0.60s;
+    background-color: #FF79DA;
+  }
+  .bouncer div:nth-child(3) {
+    -webkit-animation-delay: 0.65s;
+            animation-delay: 0.65s;
+    background-color: #99E2D0;
+  }
+}
+
+@-webkit-keyframes disappear {
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+@keyframes disappear {
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+}
+
+@-webkit-keyframes spinnerOne {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spinnerOne {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes spinner-one {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1;
+    visibility: hidden;
+  }
+}
+
+@keyframes spinner-one {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .global-choose {
+    margin-right: 100px;
+  }
+  .Restaurant {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spinner {
+    display: none;
+  }
+  header .logo {
+    width: 100%;
+  }
+  .Fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .Fonctionnement .global-choose {
+    width: 80%;
+    margin-right: 0px;
+  }
+  .menu-explorer {
+    background-color: #F2F2F2;
+    padding: 50px;
+    text-align: center;
+  }
+  .menu-explorer p {
+    font-size: 25px;
+    font-family: "Roboto Thin";
+  }
+  .menu-explorer button {
+    border-radius: 40px;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 900;
+    cursor: pointer;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: none;
+    font-family: "Roboto Regular";
+  }
+  .menu-explorer button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79d986), to(#9256dc93));
+    background: linear-gradient(#ff79d986, #9256dc93);
+  }
+  .Choose {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    -webkit-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.158);
+            box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.158);
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  .Choose:hover {
+    background: #9256dc3a;
+  }
+  .Choose:hover .icon {
+    color: #9356DC;
+  }
+  .Choose .number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    background-color: #9356DC;
+    border-radius: 50%;
+    padding: 8px;
+    height: 10px;
+    width: 10px;
+    color: white;
+    left: -30px;
+  }
+  .Choose p {
+    font-weight: bold;
+  }
+  .Choose .choose-restaurant {
+    width: 100%;
+  }
+  .Restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Restaurant .card-name-restaurant {
+    width: 100%;
+  }
+  .Restaurant .description {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Restaurant .description .far.fa-heart {
+    margin-right: 15px;
+  }
+  .Restaurant .description .far.fa-heart:hover {
+    background-image: radial-gradient(#FF79DA, #ad60f5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+    font-weight: bold;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  .Restaurant .description .name-restaurant {
+    margin-left: 15px;
+  }
+}
+
+body {
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  background: white;
+  margin: 0px;
+  font-family: "Roboto Regular";
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 10, 0.247);
+          box-shadow: 0px 0px 10px rgba(0, 0, 10, 0.247);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo {
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  background-color: rgba(211, 211, 211, 0.603);
+  text-align: center;
+  font-family: "Roboto Regular";
+  padding: 20px;
+}
+
+.localisation .fas.fa-map-marker-alt {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.localisation .field {
+  font-family: "Roboto Regular";
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.localisation .field:focus {
+  outline: none;
+}
+
+.menu-explorer {
+  background-color: #F2F2F2;
+  padding: 50px;
+  text-align: center;
+}
+
+.menu-explorer p {
+  font-size: 25px;
+  font-family: "Roboto Thin";
+}
+
+.menu-explorer button {
+  border-radius: 40px;
+  padding: 20px;
+  font-size: larger;
+  font-weight: 900;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  font-family: "Roboto Regular";
+}
+
+.menu-explorer button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79d986), to(#9256dc93));
+  background: linear-gradient(#ff79d986, #9256dc93);
+}
+
+.Fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  margin: 30px 0px 10px 0px;
+}
+
+.Fonctionnement h1 {
+  font-size: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Fonctionnement .global-choose {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.Choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F2F2F2;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  -webkit-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.158);
+          box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.158);
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.Choose:hover {
+  background: #9256dc3a;
+}
+
+.Choose:hover .icon {
+  color: #9356DC;
+}
+
+.Choose .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 8px;
+  height: 10px;
+  width: 10px;
+  color: white;
+  left: -30px;
+}
+
+.Choose p {
+  font-weight: bold;
+}
+
+.Choose .choose-restaurant {
+  width: 100%;
+}
+
+.Restaurant {
+  background-color: #F2F2F2;
+  padding: 30PX;
+  justify-items: center;
+  text-align: -webkit-center;
+}
+
+.Restaurant .card-name-restaurant {
+  text-decoration: none;
+  width: 100%;
+  color: black;
+}
+
+.Restaurant .card {
+  background-color: white;
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.158);
+          box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.158);
+  cursor: pointer;
+}
+
+.Restaurant .image-restaurant-1, .Restaurant .image-restaurant {
+  height: 70%;
+  width: 100%;
+}
+
+.Restaurant .image-restaurant-1 img, .Restaurant .image-restaurant img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Restaurant .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  height: 30%;
+}
+
+.Restaurant .description .name-restaurant {
+  width: 100%;
+  margin-left: 20px;
+  line-height: 8px;
+}
+
+.far.fa-heart {
+  font-size: 30px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.far.fa-heart:hover {
+  background-image: radial-gradient(#FF79DA, #ad60f5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.footer {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.836);
+  font-family: "Roboto Regular";
+}
+
+.footer img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.footer .fas.fa-utensils {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.footer .fas.fa-hands-helping {
+  font-size: 16px;
+  margin-right: 25px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 0px;
+}
+
+ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px 10px 0px;
+  list-style: none;
+}
+
+ul p {
+  margin: 0px;
+}
+/*# sourceMappingURL=main.css.map */
