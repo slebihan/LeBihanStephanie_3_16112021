@@ -387,6 +387,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    margin: 15px;
+  }
   .global-choose {
     margin-right: 100px;
   }
@@ -401,6 +404,9 @@
 @media screen and (max-width: 768px) {
   .spinner {
     display: none;
+  }
+  main {
+    margin: 15px;
   }
   header .logo {
     width: 100%;
@@ -538,6 +544,10 @@ body {
   background: white;
   margin: 0px;
   font-family: "Roboto Regular";
+}
+
+main {
+  margin: 15px;
 }
 
 header {
@@ -722,7 +732,7 @@ header .logo {
 
 .Restaurant .card {
   background-color: white;
-  width: 100%;
+  width: 500px;
   height: 300px;
   border-radius: 30px;
   overflow: hidden;

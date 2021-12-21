@@ -1,4 +1,8 @@
 @media screen and (min-width:768px){
+
+    main{
+        margin: 15px;
+    }
     .global-choose{
         margin-right: 100px;
     }
@@ -12,6 +16,9 @@
 
     .spinner{
         display: none;
+    }
+    main{
+        margin: 15px;
     }
     header .logo{
         width: 100%;
