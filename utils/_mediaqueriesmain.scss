@@ -1,15 +1,31 @@
 @media screen and (min-width:768px){
-
-    main{
-        margin: 15px;
-    }
     .global-choose{
         margin-right: 100px;
     }
-    .Restaurant{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    .restaurant{
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin-left: 15px;
     }
+    .all-restaurants{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .card{
+            width: 95%;
+        }
+        
+        
+    }
+    .restau-left{
+        display: flex;
+        justify-content: left;
+    }
+    .restau-right{
+        display: flex;
+        justify-content: right;
+    }
+}
 }
 
 @media screen and (max-width:768px) {
@@ -17,13 +33,11 @@
     .spinner{
         display: none;
     }
-    main{
-        margin: 15px;
-    }
+    
     header .logo{
         width: 100%;
     }
-    .Fonctionnement{
+    .fonctionnement{
         display: flex;
         flex-direction: column;
         margin:0px;
@@ -48,7 +62,7 @@
         }
     }
 
-    .Choose{
+    .choose{
         display: flex;
         align-items: center;
         background-color: #f2f2f2;
@@ -85,10 +99,18 @@
         }
     
     }
-    .Restaurant{
+    .restaurant{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
+        h2{
+            font-family: $font-4;
+        }
+        .all-restaurants{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
         .card-name-restaurant{
             width: 100%;
         }

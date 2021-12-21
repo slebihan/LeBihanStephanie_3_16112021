@@ -51,7 +51,19 @@
         flex-direction: column;
         align-items: center;
         .menu{
-        width: 70%;
+        width: 90%;
+        }
+    }
+    .menu-texte{
+        h1{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        }
+        p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         }
     }
 }

@@ -445,7 +445,17 @@
             align-items: center;
   }
   .menu-restau-1 .menu {
-    width: 70%;
+    width: 90%;
+  }
+  .menu-texte h1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .menu-texte p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 }
 
@@ -555,6 +565,9 @@ header .logo {
   width: 100%;
   font-size: 20px;
   margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .restau-1 p {
@@ -563,15 +576,19 @@ header .logo {
   margin: 5px 0px 0px 0px;
   width: 100%;
   gap: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menu {
-  margin: 0px 20px 80px 20px;
+  margin: 0px 20px 20px 20px;
   width: 40%;
 }
 
 .menu h2 {
   font-family: "Roboto Thin";
+  margin-bottom: 3px;
 }
 
 .menu .card-menu {
@@ -671,7 +688,7 @@ header .logo {
 }
 
 .restaurant-name h1 {
-  font-size: 40px;
+  font-size: 30px;
   padding: 20px 50px 20px 20px;
 }
 
@@ -703,9 +720,8 @@ header .logo {
 
 button {
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  width: 50%;
+  margin-bottom: 40px;
+  width: 70%;
   border-radius: 40px;
   padding: 20px;
   font-size: larger;
@@ -726,7 +742,6 @@ button:hover {
 .footer {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.836);
-  z-index: -50;
   font-family: "Roboto Regular";
 }
 
@@ -774,6 +789,7 @@ ul li {
           align-items: center;
   padding: 10px 10px 10px 0px;
   list-style: none;
+  height: 20px;
 }
 
 @-webkit-keyframes fade-in {

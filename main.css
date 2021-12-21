@@ -387,17 +387,45 @@
 }
 
 @media screen and (min-width: 768px) {
-  main {
-    margin: 15px;
-  }
   .global-choose {
     margin-right: 100px;
   }
-  .Restaurant {
+  .restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .restaurant h2 {
+    margin-left: 15px;
+  }
+  .restaurant .all-restaurants {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  .restaurant .all-restaurants .card {
+    width: 95%;
+  }
+  .restaurant .restau-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .restaurant .restau-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
 }
 
@@ -405,13 +433,10 @@
   .spinner {
     display: none;
   }
-  main {
-    margin: 15px;
-  }
   header .logo {
     width: 100%;
   }
-  .Fonctionnement {
+  .fonctionnement {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -428,7 +453,7 @@
             justify-content: center;
     width: 100%;
   }
-  .Fonctionnement .global-choose {
+  .fonctionnement .global-choose {
     width: 80%;
     margin-right: 0px;
   }
@@ -457,7 +482,7 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#ff79d986), to(#9256dc93));
     background: linear-gradient(#ff79d986, #9256dc93);
   }
-  .Choose {
+  .choose {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -473,13 +498,13 @@
     margin-bottom: 30px;
     cursor: pointer;
   }
-  .Choose:hover {
+  .choose:hover {
     background: #9256dc3a;
   }
-  .Choose:hover .icon {
+  .choose:hover .icon {
     color: #9356DC;
   }
-  .Choose .number {
+  .choose .number {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -495,34 +520,48 @@
     color: white;
     left: -30px;
   }
-  .Choose p {
+  .choose p {
     font-weight: bold;
   }
-  .Choose .choose-restaurant {
+  .choose .choose-restaurant {
     width: 100%;
   }
-  .Restaurant {
+  .restaurant {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
-  .Restaurant .card-name-restaurant {
+  .restaurant h2 {
+    font-family: "Roboto Bold";
+  }
+  .restaurant .all-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
-  .Restaurant .description {
+  .restaurant .card-name-restaurant {
+    width: 100%;
+  }
+  .restaurant .description {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .Restaurant .description .far.fa-heart {
+  .restaurant .description .far.fa-heart {
     margin-right: 15px;
   }
-  .Restaurant .description .far.fa-heart:hover {
+  .restaurant .description .far.fa-heart:hover {
     background-image: radial-gradient(#FF79DA, #ad60f5);
     background-clip: text;
     -webkit-background-clip: text;
@@ -532,7 +571,7 @@
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
   }
-  .Restaurant .description .name-restaurant {
+  .restaurant .description .name-restaurant {
     margin-left: 15px;
   }
 }
@@ -544,10 +583,6 @@ body {
   background: white;
   margin: 0px;
   font-family: "Roboto Regular";
-}
-
-main {
-  margin: 15px;
 }
 
 header {
@@ -639,7 +674,7 @@ header .logo {
   background: linear-gradient(#ff79d986, #9256dc93);
 }
 
-.Fonctionnement {
+.fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,20 +689,20 @@ header .logo {
   margin: 30px 0px 10px 0px;
 }
 
-.Fonctionnement h1 {
+.fonctionnement h1 {
   font-size: 2em;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.Fonctionnement .global-choose {
+.fonctionnement .global-choose {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.Choose {
+.choose {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,15 +719,15 @@ header .logo {
   cursor: pointer;
 }
 
-.Choose:hover {
+.choose:hover {
   background: #9256dc3a;
 }
 
-.Choose:hover .icon {
+.choose:hover .icon {
   color: #9356DC;
 }
 
-.Choose .number {
+.choose .number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,30 +744,28 @@ header .logo {
   left: -30px;
 }
 
-.Choose p {
+.choose p {
   font-weight: bold;
 }
 
-.Choose .choose-restaurant {
+.choose .choose-restaurant {
   width: 100%;
 }
 
-.Restaurant {
+.restaurant {
   background-color: #F2F2F2;
   padding: 30PX;
   justify-items: center;
-  text-align: -webkit-center;
 }
 
-.Restaurant .card-name-restaurant {
+.restaurant .card-name-restaurant {
   text-decoration: none;
   width: 100%;
   color: black;
 }
 
-.Restaurant .card {
+.restaurant .card {
   background-color: white;
-  width: 500px;
   height: 300px;
   border-radius: 30px;
   overflow: hidden;
@@ -742,19 +775,19 @@ header .logo {
   cursor: pointer;
 }
 
-.Restaurant .image-restaurant-1, .Restaurant .image-restaurant {
+.restaurant .image-restaurant-1, .restaurant .image-restaurant {
   height: 70%;
   width: 100%;
 }
 
-.Restaurant .image-restaurant-1 img, .Restaurant .image-restaurant img {
+.restaurant .image-restaurant-1 img, .restaurant .image-restaurant img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.Restaurant .description {
+.restaurant .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,7 +798,7 @@ header .logo {
   height: 30%;
 }
 
-.Restaurant .description .name-restaurant {
+.restaurant .description .name-restaurant {
   width: 100%;
   margin-left: 20px;
   line-height: 8px;
@@ -789,7 +822,7 @@ header .logo {
 }
 
 .footer {
-  padding: 20px;
+  padding: 30px;
   background-color: rgba(0, 0, 0, 0.836);
   font-family: "Roboto Regular";
 }
@@ -801,12 +834,12 @@ header .logo {
 
 .footer .fas.fa-utensils {
   font-size: 25px;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .footer .fas.fa-hands-helping {
   font-size: 16px;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .footer a {
