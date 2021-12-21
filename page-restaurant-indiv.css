@@ -776,10 +776,6 @@ ul li {
   list-style: none;
 }
 
-ul p {
-  margin: 0px;
-}
-
 @-webkit-keyframes fade-in {
   from {
     -webkit-transform: translate3d(0, 50px, 0);
