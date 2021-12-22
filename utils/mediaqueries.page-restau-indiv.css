@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   header .logo {
     width: 100%;
   }
@@ -21,10 +21,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -58,16 +54,6 @@
   }
   .menu-restau-1 .menu {
     width: 90%;
-  }
-  .menu-texte h1 {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .menu-texte p {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
   }
 }
 /*# sourceMappingURL=mediaqueries.page-restau-indiv.css.map */

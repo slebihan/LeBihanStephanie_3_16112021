@@ -55,14 +55,14 @@
 
 }
 
- .spinner{
-    @include spinnerbg;
+ .spinner-bg{
+    @include spinner-bg;
         h4{
        @include texte;
     }
     
     
-    .spinner-one{
+    .circle-spinner{
        @include circle-spinner;
     
     }
@@ -83,7 +83,7 @@
         z-index: 500;
         justify-content: center;
         background: white;
-        animation: spinnerOne 3s ease-in-out;
+        animation: spinner-bg 3s ease-in-out;
         visibility: hidden;
     }   
     
@@ -134,7 +134,7 @@
   }
   
   
-  @keyframes spinnerOne {
+  @keyframes spinner-bg {
     0% {
       visibility: visible;
       opacity: 0.9;
@@ -149,7 +149,7 @@
   }
   
   
-  @keyframes spinner-one {
+  @keyframes circle-spinner {
     0% {
       visibility: visible;
       opacity: 1;

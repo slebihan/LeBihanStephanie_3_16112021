@@ -17,6 +17,8 @@
     
 }
 
+// ** Bouton Like ** //
+
 @mixin heart {
 
     font-size: 30px;
@@ -35,8 +37,11 @@
     transition:all 0.5s ease-out;
     
 }
+// ** End Bouton Like ** //
 
-@mixin spinnerbg {
+// ** loader oh my food cercle ** //
+
+@mixin spinner-bg {
     width: 100%;
     height: 100%;
     display: flex;
@@ -44,7 +49,7 @@
     position: fixed;
     z-index: 10;
     background: white;
-    animation: spinnerOne 3s ease-in-out;
+    animation: spinner-bg 3s ease-in-out;
     visibility: hidden;
 }
 
@@ -68,9 +73,10 @@
     border-bottom: 5px solid #FF79DA;
     border-left: 5px solid transparent;
     border-radius: 50%;
-    animation:spinner-one 1s ease-in;
+    animation:circle-spinner 1s ease-in;
     animation-iteration-count: 2;
     z-index: 20;
     visibility: hidden;
     font-size: 100px;
 }
+// ** end oh my food cercle **//

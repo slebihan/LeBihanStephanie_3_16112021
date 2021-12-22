@@ -1,4 +1,11 @@
+
+
+// *** DESKTOP *** ///
+
 @media screen and (min-width:768px){
+    .logo img{
+        width: 20%;
+    }
     .global-choose{
         margin-right: 100px;
     }
@@ -27,16 +34,16 @@
     }
 }
 }
+// *** END DESKTOP *** // 
+
+// *** MOBILE *** //
 
 @media screen and (max-width:768px) {
 
-    .spinner{
+    .spinner-bg{
         display: none;
     }
     
-    header .logo{
-        width: 100%;
-    }
     .fonctionnement{
         display: flex;
         flex-direction: column;
@@ -45,8 +52,8 @@
         justify-content: center;
         width: 100%;
         .global-choose{
-            width: 80%;
-            margin-right: 0px;
+            width: 90%;
+
         }
     }
     .menu-explorer{
@@ -131,3 +138,4 @@
     }
 
 }
+// *** END MOBILE *** //

@@ -10,7 +10,7 @@
 }
 
 
-@media (min-width:768px) and (max-width:992px) {
+@media screen and (min-width:768px) {
 
     header .logo{   
         width: 100%;
@@ -23,7 +23,6 @@
 
     .menu-restau-1{
         display:flex;
-        flex-direction: column;
         align-items: center;
     }
     .menu{
@@ -52,18 +51,6 @@
         align-items: center;
         .menu{
         width: 90%;
-        }
-    }
-    .menu-texte{
-        h1{
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        }
-        p{
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
         }
     }
 }

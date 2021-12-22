@@ -17,14 +17,14 @@ header{
     display: flex;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 10, 0.247);
-    justify-content: center;
-    .logo{
-        padding: 20px;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        }
+    justify-content: center;   
 }
+.logo{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    }
 
 .localisation{
     display: flex;
