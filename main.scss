@@ -181,6 +181,9 @@ header{
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.836);
     font-family: $font-2;
+    .logo{
+        padding: 0px;
+    }
     img{
         filter: invert(100%);
     }
