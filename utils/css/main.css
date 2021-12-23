@@ -803,12 +803,12 @@ header {
   cursor: pointer;
 }
 
-.restaurant .image-restaurant-1, .restaurant .image-restaurant {
+.restaurant .image-restaurant {
   height: 70%;
   width: 100%;
 }
 
-.restaurant .image-restaurant-1 img, .restaurant .image-restaurant img {
+.restaurant .image-restaurant img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
