@@ -1,91 +1,91 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url("../Fonts/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Regular";
-  src: url("../Fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Thin";
-  src: url("../Fonts/Roboto/Roboto-Thin.ttf");
+  src: url("../fonts/Roboto/Roboto-Thin.ttf");
 }
 
 @font-face {
   font-family: "Roboto Bold";
-  src: url("../Fonts/Roboto/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
   font-family: "Roboto Light";
-  src: url("../Fonts/Roboto/Roboto-Light.ttf");
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url("../Fonts/Roboto/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
 }
 
 @font-face {
   font-family: "Shrikhand";
-  src: url("../Fonts/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Regular";
-  src: url("../Fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Thin";
-  src: url("../Fonts/Roboto/Roboto-Thin.ttf");
+  src: url("../fonts/Roboto/Roboto-Thin.ttf");
 }
 
 @font-face {
   font-family: "Roboto Bold";
-  src: url("../Fonts/Roboto/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
   font-family: "Roboto Light";
-  src: url("../Fonts/Roboto/Roboto-Light.ttf");
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url("../Fonts/Roboto/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
 }
 
 @font-face {
   font-family: "Shrikhand";
-  src: url("../Fonts/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Regular";
-  src: url("../Fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: "Roboto Thin";
-  src: url("../Fonts/Roboto/Roboto-Thin.ttf");
+  src: url("../fonts/Roboto/Roboto-Thin.ttf");
 }
 
 @font-face {
   font-family: "Roboto Bold";
-  src: url("../Fonts/Roboto/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
   font-family: "Roboto Light";
-  src: url("../Fonts/Roboto/Roboto-Light.ttf");
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url("../Fonts/Roboto/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
 }
 
 .menu:nth-child(1) .card-menu {
@@ -389,6 +389,9 @@
 @media screen and (min-width: 768px) {
   .global-choose {
     margin-right: 100px;
+  }
+  .global-choose .icon {
+    font-size: 30px;
   }
   .restaurant {
     display: -webkit-box;
@@ -863,12 +866,12 @@ header {
 
 .footer .fas.fa-utensils {
   font-size: 25px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .footer .fas.fa-hands-helping {
   font-size: 16px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .footer a {
