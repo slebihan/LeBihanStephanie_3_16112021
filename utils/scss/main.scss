@@ -181,11 +181,20 @@ header{
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.836);
     font-family: $font-2;
+    .menu-footer{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
     .logo{
         padding: 0px;
     }
     img{
         filter: invert(100%);
+    }
+    .ul{
+        width: 80%;
+        justify-content: space-evenly;
     }
     .fas.fa-utensils{
         font-size: 25px;

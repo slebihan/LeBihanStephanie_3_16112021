@@ -444,9 +444,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .footer a {
     display: -webkit-box;
@@ -455,6 +455,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 15%;
   }
 }
 
@@ -601,6 +604,12 @@
   }
   .footer .logo {
     text-align: left;
+  }
+  .footer .menu-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -855,6 +864,15 @@ header {
   font-family: "Roboto Regular";
 }
 
+.footer .menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
 .footer .logo {
   padding: 0px;
 }
@@ -862,6 +880,13 @@ header {
 .footer img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+.footer .ul {
+  width: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .footer .fas.fa-utensils {
