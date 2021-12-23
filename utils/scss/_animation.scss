@@ -1,0 +1,189 @@
+@import "./variables" ;
+
+
+.menu:nth-child(1){
+    .card-menu{
+        animation: fade-in 2s ease forwards;
+        animation-delay: 3s;
+        opacity: 0;
+        &:nth-child(3){
+            animation-delay: 3100ms;
+        }
+        &:nth-child(4){
+            animation-delay: 3300ms;
+        }
+        &:nth-child(5){
+            animation-delay: 3500ms;
+        }
+    }
+}
+
+.menu:nth-child(2){
+    .card-menu{
+        animation: fade-in 2s ease forwards;
+        animation-delay: 3.6s;
+        opacity: 0;
+        &:nth-child(3){
+            animation-delay: 3700ms;
+        }
+        &:nth-child(4){
+            animation-delay: 3900ms;
+        }
+        &:nth-child(5){
+            animation-delay: 4100ms;
+        }
+
+}
+}
+
+
+.menu:nth-child(3){
+    .card-menu{
+        animation: fade-in 2s ease forwards;
+        animation-delay: 4.2s;
+        opacity: 0;
+        &:nth-child(3){
+            animation-delay: 4300ms;
+        }
+        &:nth-child(4){
+            animation-delay: 4500ms;
+        }
+        &:nth-child(5){
+            animation-delay: 4600ms;
+        }
+}
+
+}
+
+ .spinner-bg{
+    @include spinner-bg;
+        h4{
+       @include texte;
+    }
+    
+    
+    .circle-spinner{
+       @include circle-spinner;
+    
+    }
+
+    }
+
+@media screen and (max-width:768px) {
+
+    .loader{
+      position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        bottom: 0px;
+        align-items: center;
+        position: fixed;
+        z-index: 500;
+        justify-content: center;
+        background: white;
+        animation: spinner-bg 3s ease-in-out;
+        visibility: hidden;
+    }   
+    
+    
+    
+    .bouncer{
+      display: flex;
+      position: fixed;
+      justify-content: space-around;
+      align-items: center;
+      width:100px;
+      height: 100px;
+      z-index: 500;
+      margin: 0 auto;
+      
+    }
+    .bouncer div{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        animation: bounce 0.5s ease infinite alternate,opacity 3s ease forwards;
+    
+        &:nth-child(1){
+            animation-delay: 0.55s;
+            background-color: $color-primary;
+        }
+        &:nth-child(2){
+            animation-delay: 0.60s;
+            background-color: $color-secondary;
+        }
+        &:nth-child(3){
+            animation-delay: 0.65s;
+            background-color: $color-tertiary;
+        }
+    
+    }
+    
+}
+
+
+
+  
+  @keyframes disappear {
+    to {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+  }
+  
+  
+  @keyframes spinner-bg {
+    0% {
+      visibility: visible;
+      opacity: 0.9;
+    }
+    70% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  
+  @keyframes circle-spinner {
+    0% {
+      visibility: visible;
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+      opacity: 1;
+      visibility: hidden;
+    }
+  }
+  
+  
+  @keyframes opacity {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bounce {
+    from {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    to {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+
+  
