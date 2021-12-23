@@ -21,12 +21,12 @@ header{
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 10, 0.247);
 }
-.logo{
-    width: 100%;
+.logo-top{
     padding: 20px;
     align-items: center;
     text-align: center;
     justify-content: center;
+    width: 100%;
     }
 .back{
     position: absolute;
@@ -34,6 +34,7 @@ header{
     margin-left: 30px;
     color: black;
     align-items: center;
+    text-decoration: none;
     }
 
 .banner{
@@ -212,7 +213,6 @@ button{
 .footer{
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.836);
-    font-family: $font-2;
     img{
         filter: invert(100%);
     }
@@ -232,9 +232,6 @@ button{
 
 
 ul{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: white;
     padding: 0px;
     li{

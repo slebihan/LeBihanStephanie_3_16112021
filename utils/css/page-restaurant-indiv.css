@@ -387,11 +387,10 @@
 }
 
 @media screen and (min-width: 992px) {
-  .logo {
+  .logo-top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
   }
   .menu-restau-1 {
     display: -webkit-box;
@@ -407,7 +406,7 @@
   .footer {
     text-align: center;
   }
-  .footer .logo {
+  .footer .logo-bottom {
     text-align: center;
   }
   .footer .menu-footer {
@@ -456,12 +455,19 @@
   .menu {
     width: 90%;
   }
+  .logo-bottom {
+    text-align: center;
+  }
   .menu-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  ul {
+  .menu-footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -473,7 +479,7 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  a {
+  .menu-footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -505,6 +511,24 @@
   .menu-restau-1 .menu {
     width: 90%;
   }
+  .menu-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 body {
@@ -527,8 +551,7 @@ header {
           box-shadow: 0px 0px 10px rgba(0, 0, 10, 0.247);
 }
 
-.logo {
-  width: 100%;
+.logo-top {
   padding: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -537,6 +560,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .back {
@@ -547,6 +571,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .banner {
@@ -790,7 +815,6 @@ button:hover {
 .footer {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.836);
-  font-family: "Roboto Regular";
 }
 
 .footer img {
@@ -814,16 +838,6 @@ button:hover {
 }
 
 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: white;
   padding: 0px;
 }
