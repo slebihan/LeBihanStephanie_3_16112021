@@ -3,12 +3,17 @@
 // *** DESKTOP *** ///
 
 @media screen and (min-width:768px){
+    .fonctionnement{
+    h2{
+        text-align: center;
+    }
     .global-choose{
         margin-right: 100px;
         .icon{
             font-size: 30px;
         }
     }
+}
     .restaurant{
     display: flex;
     flex-direction: column;
@@ -69,9 +74,11 @@
         margin:0px;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        h2{
+            text-align: left;
+        }
         .global-choose{
-            width: 90%;
+            width: 100%;
 
         }
     }
