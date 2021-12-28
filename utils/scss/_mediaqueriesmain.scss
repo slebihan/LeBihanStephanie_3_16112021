@@ -32,11 +32,14 @@
     .restau-left{
         display: flex;
         justify-content: left;
+        &:nth-child(1){
+            margin-bottom: 50px;
+        }
     }
     .restau-right{
         display: flex;
         justify-content: right;
-    }
+        }
     }
     .footer{
         text-align: center;

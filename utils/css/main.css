@@ -425,6 +425,9 @@
         -ms-flex-pack: left;
             justify-content: left;
   }
+  .restaurant .restau-left:nth-child(1) {
+    margin-bottom: 50px;
+  }
   .restaurant .restau-right {
     display: -webkit-box;
     display: -ms-flexbox;
