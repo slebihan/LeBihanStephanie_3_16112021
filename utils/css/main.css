@@ -88,73 +88,136 @@
   src: url("../fonts/Roboto/Roboto-Medium.ttf");
 }
 
-.menu:nth-child(1) .card-menu {
+.card-menu {
   -webkit-animation: fade-in 2s ease forwards;
           animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(3) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(4) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(5) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(6) {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-  opacity: 0;
 }
 
-.menu:nth-child(1) .card-menu:nth-child(3) {
-  -webkit-animation-delay: 3100ms;
-          animation-delay: 3100ms;
-}
-
-.menu:nth-child(1) .card-menu:nth-child(4) {
-  -webkit-animation-delay: 3300ms;
-          animation-delay: 3300ms;
-}
-
-.menu:nth-child(1) .card-menu:nth-child(5) {
-  -webkit-animation-delay: 3500ms;
-          animation-delay: 3500ms;
-}
-
-.menu:nth-child(2) .card-menu {
+.card-menu {
   -webkit-animation: fade-in 2s ease forwards;
           animation: fade-in 2s ease forwards;
-  -webkit-animation-delay: 3.6s;
-          animation-delay: 3.6s;
   opacity: 0;
 }
 
-.menu:nth-child(2) .card-menu:nth-child(3) {
-  -webkit-animation-delay: 3700ms;
-          animation-delay: 3700ms;
+.card-menu:nth-child(7) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 
-.menu:nth-child(2) .card-menu:nth-child(4) {
-  -webkit-animation-delay: 3900ms;
-          animation-delay: 3900ms;
-}
-
-.menu:nth-child(2) .card-menu:nth-child(5) {
-  -webkit-animation-delay: 4100ms;
-          animation-delay: 4100ms;
-}
-
-.menu:nth-child(3) .card-menu {
+.card-menu {
   -webkit-animation: fade-in 2s ease forwards;
           animation: fade-in 2s ease forwards;
-  -webkit-animation-delay: 4.2s;
-          animation-delay: 4.2s;
   opacity: 0;
 }
 
-.menu:nth-child(3) .card-menu:nth-child(3) {
-  -webkit-animation-delay: 4300ms;
-          animation-delay: 4300ms;
+.card-menu:nth-child(8) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
-.menu:nth-child(3) .card-menu:nth-child(4) {
-  -webkit-animation-delay: 4500ms;
-          animation-delay: 4500ms;
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
 }
 
-.menu:nth-child(3) .card-menu:nth-child(5) {
-  -webkit-animation-delay: 4600ms;
-          animation-delay: 4600ms;
+.card-menu:nth-child(9) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(10) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(11) {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(12) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(13) {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+.card-menu {
+  -webkit-animation: fade-in 2s ease forwards;
+          animation: fade-in 2s ease forwards;
+  opacity: 0;
+}
+
+.card-menu:nth-child(14) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 .spinner-bg {
@@ -174,7 +237,7 @@
   visibility: hidden;
 }
 
-.spinner-bg h4 {
+.spinner-bg h1 {
   font-size: 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -198,7 +261,7 @@
   height: 100px;
   background-color: transparent;
   border-top: 5px solid #9356dc;
-  border-bottom: 5px solid #FF79DA;
+  border-bottom: 5px solid #ff79da;
   border-left: 5px solid transparent;
   border-radius: 50%;
   -webkit-animation: circle-spinner 1s ease-in;
@@ -207,7 +270,12 @@
           animation-iteration-count: 2;
   z-index: 20;
   visibility: hidden;
-  font-size: 100px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Shrikhand";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -252,8 +320,8 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    -webkit-animation: bounce 0.5s ease infinite alternate,opacity 3s ease forwards;
-            animation: bounce 0.5s ease infinite alternate,opacity 3s ease forwards;
+    -webkit-animation: bounce 0.5s ease infinite alternate, opacity 3s ease forwards;
+            animation: bounce 0.5s ease infinite alternate, opacity 3s ease forwards;
   }
   .bouncer div:nth-child(1) {
     -webkit-animation-delay: 0.55s;
@@ -261,14 +329,14 @@
     background-color: #9356dc;
   }
   .bouncer div:nth-child(2) {
-    -webkit-animation-delay: 0.60s;
-            animation-delay: 0.60s;
-    background-color: #FF79DA;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+    background-color: #ff79da;
   }
   .bouncer div:nth-child(3) {
     -webkit-animation-delay: 0.65s;
             animation-delay: 0.65s;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
   }
 }
 
@@ -386,6 +454,94 @@
   }
 }
 
+@-webkit-keyframes fade-in {
+  from {
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes checkbutton {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes checkbutton {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes checkrate {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+
+@keyframes checkrate {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+}
+
+@-webkit-keyframes quarterspin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes quarterspin {
+  0% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .fonctionnement h2 {
     text-align: center;
@@ -494,7 +650,7 @@
     width: 100%;
   }
   .menu-explorer {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     padding: 50px;
     text-align: center;
   }
@@ -505,11 +661,12 @@
   .menu-explorer button {
     border-radius: 40px;
     padding: 20px;
+    margin-top: 30px;
     font-size: larger;
     font-weight: 900;
     cursor: pointer;
-    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(#FF79DA, #9356DC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background: linear-gradient(#ff79da, #9356dc);
     color: white;
     border: none;
     font-family: "Roboto Regular";
@@ -538,7 +695,7 @@
     background: #9256dc3a;
   }
   .choose:hover .icon {
-    color: #9356DC;
+    color: #9356dc;
   }
   .choose .number {
     display: -webkit-box;
@@ -548,7 +705,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    background-color: #9356DC;
+    background-color: #9356dc;
     border-radius: 50%;
     padding: 8px;
     height: 10px;
@@ -598,7 +755,7 @@
     margin-right: 15px;
   }
   .restaurant .description .far.fa-heart:hover {
-    background-image: radial-gradient(#FF79DA, #ad60f5);
+    background-image: radial-gradient(#ff79da, #ad60f5);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -614,6 +771,12 @@
     text-align: left;
   }
   .footer .menu-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .menu-footer ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -691,7 +854,7 @@ header {
 }
 
 .menu-explorer {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 50px;
   text-align: center;
 }
@@ -704,11 +867,12 @@ header {
 .menu-explorer button {
   border-radius: 40px;
   padding: 20px;
+  margin-top: 30px;
   font-size: larger;
   font-weight: 900;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   color: white;
   border: none;
   font-family: "Roboto Regular";
@@ -754,7 +918,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 20px;
   border-radius: 20px;
   font-size: 18px;
@@ -769,7 +933,7 @@ header {
 }
 
 .choose:hover .icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .choose .number {
@@ -780,7 +944,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 50%;
   padding: 8px;
   height: 10px;
@@ -789,17 +953,17 @@ header {
   left: -30px;
 }
 
-.choose p {
-  font-weight: bold;
-}
-
 .choose .choose-restaurant {
   width: 100%;
 }
 
+.choose .choose-restaurant p {
+  font-weight: bold;
+}
+
 .restaurant {
-  background-color: #F2F2F2;
-  padding: 30PX;
+  background-color: #f2f2f2;
+  padding: 30px;
   justify-items: center;
 }
 
@@ -846,7 +1010,11 @@ header {
 .restaurant .description .name-restaurant {
   width: 100%;
   margin-left: 20px;
-  line-height: 8px;
+}
+
+.restaurant .description .name-restaurant h3 {
+  height: 30px;
+  margin: 0px;
 }
 
 .far.fa-heart {
@@ -856,7 +1024,7 @@ header {
 }
 
 .far.fa-heart:hover {
-  background-image: radial-gradient(#FF79DA, #ad60f5);
+  background-image: radial-gradient(#ff79da, #ad60f5);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -872,6 +1040,15 @@ header {
   font-family: "Roboto Regular";
 }
 
+.footer .logo {
+  padding: 0px;
+}
+
+.footer .logo img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 .footer .menu-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -881,53 +1058,32 @@ header {
   width: 100%;
 }
 
-.footer .logo {
+.footer ul {
+  width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
   padding: 0px;
 }
 
-.footer img {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
-.footer .ul {
-  width: 80%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.footer .fas.fa-utensils {
+.footer ul .fas.fa-utensils {
   font-size: 25px;
   margin-right: 10px;
 }
 
-.footer .fas.fa-hands-helping {
+.footer ul .fas.fa-hands-helping {
   font-size: 16px;
   margin-right: 10px;
 }
 
-.footer a {
-  text-decoration: none;
-  color: white;
-}
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  padding: 0px;
-}
-
-ul li {
+.footer ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,7 +1094,12 @@ ul li {
   list-style: none;
 }
 
-ul p {
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
   margin: 0px;
 }
 /*# sourceMappingURL=main.css.map */

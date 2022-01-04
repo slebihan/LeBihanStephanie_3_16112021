@@ -1,93 +1,112 @@
-@media screen and (min-width:992px){
-    
-    .logo-top{
-        display: flex;
-        }
-    .menu-restau-1{
-        display:flex;
-        align-items: center;
+@media screen and (min-width: 992px) {
+  .logo-top {
+    display: flex;
+  }
+  .restaurant-name {
+    padding: 50px 20px 20px 40px;
+    h1 {
+      text-align: center;
+      width: 70%;
     }
-    .menu{
-        width: 40%;
+    .like {
+      width: 30%;
+      text-align: center;
     }
-    .footer{
-        text-align: center;
-        .logo-bottom{
-            text-align: center;
-        }
-        .menu-footer{
-            display: flex;
-        }
-        ul{
-            display: flex;
-            flex-direction: row;
-            width: 80%;
-            justify-content: space-around;
-        }
-        a{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            width: 15%;
-        }
-        
+  }
+  .menu-restau-1 {
+    display: flex;
+    align-items: center;
+    .menu {
+      width: 40%;
+    }
+  }
 
-    }   
+  .footer {
+    text-align: center;
+    .logo-bottom {
+      text-align: center;
+    }
+    .menu-footer {
+      display: flex;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      justify-content: space-around;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 15%;
+    }
+  }
 }
 
-
-@media (min-width:768px) and (max-width:992px) {
-
-
-    .menu-restau-1{
-        display:flex;
-        align-items: center;
-        flex-direction: column;
+@media (min-width: 768px) and (max-width: 992px) {
+  .restaurant-name {
+    padding: 50px 20px 20px 40px;
+    h1 {
+      text-align: center;
+      width: 70%;
     }
-    .menu{
-        width: 90%;
+    .like {
+      width: 30%;
+      text-align: center;
     }
-    .logo-bottom{
-        text-align: center;
-        }
-    .menu-footer{
-        display: flex;
-        flex-direction: row;
-        ul{
-        display: flex;
-        flex-direction: row;
-        width: 80%;
-        justify-content: space-around;
-        }
-        a{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 15%;
-        }
-   
+  }
+
+  .menu-restau-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu {
+    width: 90%;
+  }
+  .logo-bottom {
+    text-align: center;
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: row;
+    ul {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      justify-content: space-around;
     }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 15%;
+    }
+  }
 }
-@media  screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
+  .spinner-bg {
+    display: none;
+  }
+  .restaurant-name {
+    padding: 50px 20px 20px 30px;
+  }
 
-    .spinner-bg{
-        display: none;
+  .menu-restau-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .menu {
+      width: 90%;
     }
-
-    .menu-restau-1{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        .menu{
-        width: 90%;
-        }
-    }
-    .menu-footer{
-        display: flex;
-        flex-direction: column;
-    }
-    .ul{
-        display: flex;
-        flex-direction: column;
-    }
+  }
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
