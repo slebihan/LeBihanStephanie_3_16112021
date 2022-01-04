@@ -763,6 +763,7 @@ header {
 .restaurant-name h1 {
   font-size: 30px;
   padding: 20px 50px 20px 20px;
+  margin-left: 100px;
 }
 
 .restaurant-name .like {
