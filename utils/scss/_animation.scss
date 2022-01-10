@@ -25,6 +25,8 @@
   }
 }
 
+// MOBILE //
+
 @media screen and (max-width: 768px) {
   .loader {
     position: fixed;
@@ -35,7 +37,7 @@
     bottom: 0px;
     align-items: center;
     position: fixed;
-    z-index: 500;
+    z-index: 100;
     justify-content: center;
     background: white;
     animation: spinner-bg 3s ease-in-out;
@@ -49,7 +51,7 @@
     align-items: center;
     width: 100px;
     height: 100px;
-    z-index: 500;
+    z-index: 100;
     margin: 0 auto;
   }
   .bouncer div {
@@ -73,12 +75,9 @@
   }
 }
 
-@keyframes disappear {
-  to {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-}
+// END MOBILE //
+
+// ANIMATION BACKGROUND DU LOADER //
 
 @keyframes spinner-bg {
   0% {
@@ -93,6 +92,8 @@
     visibility: hidden;
   }
 }
+
+// ANIMATION DU CERCLE DU LOADER //
 
 @keyframes circle-spinner {
   0% {
@@ -110,14 +111,7 @@
   }
 }
 
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// animation du loader en mobile//
 
 @keyframes bounce {
   from {
@@ -130,6 +124,8 @@
   }
 }
 
+// animation du fondu pour l'apparition des menus //
+
 $distance: 50px;
 
 @keyframes fade-in {
@@ -141,22 +137,31 @@ $distance: 50px;
     opacity: 1;
   }
 }
+
+// animation du check pour le bouton de sélection //
+
 @keyframes checkbutton {
   0% {
     transform: translateX(100px);
   }
   100% {
+
     transform: translateX(0px);
   }
 }
+
+// animation de la transition vers la gauche du prix //
+
 @keyframes checkrate {
   0% {
     transform: translateX(0px);
   }
   100% {
-    transform: translateX(-50px);
+    transform: translateX(-65px);
   }
 }
+
+// animation de la rotation du validé dans le bouton de sélection //
 
 @keyframes quarterspin {
   0% {
