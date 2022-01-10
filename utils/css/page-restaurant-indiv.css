@@ -757,11 +757,6 @@ header .logo-top {
   border-top-left-radius: 60px;
 }
 
-.restau-1 .restaurant-name h1 {
-  font-size: 30px;
-  margin: 0px;
-}
-
 .restau-1 .menu-restau-1 {
   display: -webkit-box;
   display: -ms-flexbox;

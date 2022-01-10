@@ -165,14 +165,14 @@ header {
 
   .description {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: left;
     height: 30%;
     p{
       margin:0px;
     }
     .name-restaurant {
-      width: 100%;
+     
       margin-left: 20px;
       h3 {
         height: 30px;
