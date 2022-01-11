@@ -535,8 +535,7 @@
   .restaurant .all-restaurants {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .restaurant .all-restaurants .card {
     width: 95%;
@@ -720,7 +719,7 @@
   }
   .restaurant .description .far.fa-heart:hover {
     background-image: radial-gradient(#ff79da, #ad60f5);
-    background-clip: text;
+    background-clip: content-box;
     -webkit-background-clip: text;
     color: transparent;
     opacity: 1;
@@ -1009,7 +1008,7 @@ header {
 
 .far.fa-heart:hover {
   background-image: radial-gradient(#ff79da, #ad60f5);
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 1;
