@@ -21,21 +21,8 @@
     .all-restaurants {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      .card {
-        width: 95%;
-      }
-    }
-    .restau-left {
-      display: flex;
-      justify-content: left;
-      &:nth-child(1) {
-        margin-bottom: 50px;
-      }
-      
-    }
-    .restau-right {
-      display: flex;
-      justify-content: flex-end;
+      row-gap: 40px;
+      column-gap: 40px;
     }
   }
   .footer {
@@ -133,10 +120,9 @@
     .all-restaurants {
       display: flex;
       flex-direction: column;
-      width: 100%;
-    }
-    .card-name-restaurant {
-      width: 100%;
+      .card{
+        margin-bottom: 40px;
+      }
     }
     .description {
       justify-content: space-between;

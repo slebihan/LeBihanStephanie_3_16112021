@@ -154,10 +154,10 @@ $distance: 50px;
 
 @keyframes checkrate {
   0% {
-    transform: translateX(0px);
+    transform: translateX(50px);
   }
   100% {
-    transform: translateX(-65px);
+    transform: translateX(0px);
   }
 }
 

@@ -468,23 +468,23 @@
 
 @-webkit-keyframes checkrate {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   100% {
-    -webkit-transform: translateX(-65px);
-            transform: translateX(-65px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes checkrate {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   100% {
-    -webkit-transform: translateX(-65px);
-            transform: translateX(-65px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -535,29 +535,11 @@
   .restaurant .all-restaurants {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .restaurant .all-restaurants .card {
-    width: 95%;
-  }
-  .restaurant .restau-left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-  .restaurant .restau-left:nth-child(1) {
-    margin-bottom: 50px;
-  }
-  .restaurant .restau-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
   }
   .footer {
     text-align: center;
@@ -704,10 +686,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
   }
-  .restaurant .card-name-restaurant {
-    width: 100%;
+  .restaurant .all-restaurants .card {
+    margin-bottom: 40px;
   }
   .restaurant .description {
     -webkit-box-pack: justify;
@@ -719,7 +700,7 @@
   }
   .restaurant .description .far.fa-heart:hover {
     background-image: radial-gradient(#ff79da, #ad60f5);
-    background-clip: content-box;
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     opacity: 1;
@@ -935,7 +916,6 @@ header {
   height: 300px;
   border-radius: 30px;
   overflow: hidden;
-  margin-bottom: 20px;
   -webkit-box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.158);
           box-shadow: 5px 5px 20px -3px rgba(0, 0, 0, 0.158);
   cursor: pointer;
@@ -1008,7 +988,7 @@ header {
 
 .far.fa-heart:hover {
   background-image: radial-gradient(#ff79da, #ad60f5);
-  background-clip: content-box;
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 1;

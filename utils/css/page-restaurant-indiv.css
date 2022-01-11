@@ -468,23 +468,23 @@
 
 @-webkit-keyframes checkrate {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   100% {
-    -webkit-transform: translateX(-65px);
-            transform: translateX(-65px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes checkrate {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
   }
   100% {
-    -webkit-transform: translateX(-65px);
-            transform: translateX(-65px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -779,12 +779,10 @@ header .logo-top {
 .restau-1 .rate {
   overflow: hidden;
   font-family: "Roboto Regular";
-  position: absolute;
-  left: 85%;
-  height: 100%;
-  margin-top: 110px;
-  width: 15%;
+  width: 10%;
   text-align: center;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
 }
 
 .restau-1 h3 {
