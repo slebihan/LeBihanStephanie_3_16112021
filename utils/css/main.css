@@ -472,8 +472,8 @@
             transform: translateX(50px);
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
   }
 }
 
@@ -483,8 +483,8 @@
             transform: translateX(50px);
   }
   100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
   }
 }
 
