@@ -239,6 +239,12 @@ header {
   a {
     text-decoration: none;
     color: white;
+    display: flex;
+    align-items: center;
+    width: 15%;
+    i{
+      margin-right: 10px;
+    }
   }
 }
 
